@@ -1,5 +1,7 @@
 name: Awesome Work Flow
-on: push
+on: 
+  push:
+  workflow_dispatch:
 jobs:
   cool_first_job:
     runs-on: ubuntu-latest
