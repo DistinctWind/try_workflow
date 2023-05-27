@@ -14,3 +14,9 @@ jobs:
         run: c++ -o hello hello.cpp
       - name: Run this code
         run: ./hello
+  detect_cpp_info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run this command
+        run: c++ --version
+      
