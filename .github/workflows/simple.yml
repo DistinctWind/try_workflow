@@ -10,3 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Then list the repo again
         run: ls
+      - name: Compile this code
+        run: c++ -o hello hello.cpp
+      - name: Run this code
+        run: ./hello
