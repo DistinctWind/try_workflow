@@ -21,4 +21,8 @@ jobs:
     steps:
       - name: run this command
         run: c++ --version
-      
+  manual_trigger_error:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger error
+        run: echo "::error file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
