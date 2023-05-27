@@ -1,0 +1,9 @@
+name: Awesome Work Flow
+on: push
+jobs:
+  cool_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First checkout the repo
+        run: ls
+      
