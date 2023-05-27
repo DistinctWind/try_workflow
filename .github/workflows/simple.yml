@@ -4,6 +4,9 @@ jobs:
   cool_first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: First checkout the repo
+      - name: First list the repo
         run: ls
-      
+      - name: Then checkout the repo
+        uses: actions/checkout@v3
+      - name: Then list the repo again
+        run: ls
